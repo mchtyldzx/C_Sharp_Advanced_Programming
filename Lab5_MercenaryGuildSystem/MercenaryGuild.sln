@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MercenaryGuild.Library", "Library\MercenaryGuild.Library.csproj", "{C1B5E3F3-0CEE-4B9C-8C16-61F1A4F52E3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MercenaryGuild.App", "App\MercenaryGuild.App.csproj", "{F5A8BDE8-6E43-4E0A-9F2F-1A521E9D0989}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1B5E3F3-0CEE-4B9C-8C16-61F1A4F52E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1B5E3F3-0CEE-4B9C-8C16-61F1A4F52E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1B5E3F3-0CEE-4B9C-8C16-61F1A4F52E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1B5E3F3-0CEE-4B9C-8C16-61F1A4F52E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5A8BDE8-6E43-4E0A-9F2F-1A521E9D0989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5A8BDE8-6E43-4E0A-9F2F-1A521E9D0989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5A8BDE8-6E43-4E0A-9F2F-1A521E9D0989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5A8BDE8-6E43-4E0A-9F2F-1A521E9D0989}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal 
