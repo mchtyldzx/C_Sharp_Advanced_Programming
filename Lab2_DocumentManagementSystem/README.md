@@ -34,7 +34,7 @@ I created different types of documents:
   - Books before printing was invented
   - Wrong volume numbers
 
-## What This Program Do
+## What This Program Does
 1. Add different types of documents
 2. See list of all documents
 3. Find documents by ISBN
