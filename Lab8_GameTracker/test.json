@@ -1,0 +1,102 @@
+[
+  {
+    "Title": "The Witcher 3",
+    "Type": {
+      "TypeName": "RPG"
+    },
+    "StartDate": "2024-01-15T00:00:00",
+    "EndDate": "2024-02-15T00:00:00",
+    "HoursPlayed": 85,
+    "Rating": 9.5
+  },
+  {
+    "Title": "Counter-Strike 2",
+    "Type": {
+      "TypeName": "FPS"
+    },
+    "StartDate": "2024-02-01T00:00:00",
+    "EndDate": null,
+    "HoursPlayed": 45,
+    "Rating": 8.5
+  },
+  {
+    "Title": "Civilization VI",
+    "Type": {
+      "TypeName": "Strategy"
+    },
+    "StartDate": "2024-03-01T00:00:00",
+    "EndDate": null,
+    "HoursPlayed": 30,
+    "Rating": 9.0
+  },
+  {
+    "Title": "Elden Ring",
+    "Type": {
+      "TypeName": "RPG"
+    },
+    "StartDate": "2024-01-01T00:00:00",
+    "EndDate": "2024-03-15T00:00:00",
+    "HoursPlayed": 120,
+    "Rating": 9.8
+  },
+  {
+    "Title": "Age of Empires IV",
+    "Type": {
+      "TypeName": "Strategy"
+    },
+    "StartDate": "2025-02-15T00:00:00",
+    "EndDate": null,
+    "HoursPlayed": 25,
+    "Rating": 8.7
+  },
+  {
+    "Title": "Red Dead Redemption 2",
+    "Type": {
+      "TypeName": "RPG"
+    },
+    "StartDate": "2024-08-20T00:00:00",
+    "EndDate": "2025-03-20T00:00:00",
+    "HoursPlayed": 95,
+    "Rating": 9.7
+  },
+  {
+    "Title": "Valorant",
+    "Type": {
+      "TypeName": "FPS"
+    },
+    "StartDate": "2024-02-10T00:00:00",
+    "EndDate": null,
+    "HoursPlayed": 60,
+    "Rating": 8.8
+  },
+  {
+    "Title": "Stardew Valley",
+    "Type": {
+      "TypeName": "RPG"
+    },
+    "StartDate": "2024-03-01T00:00:00",
+    "EndDate": null,
+    "HoursPlayed": 40,
+    "Rating": 9.2
+  },
+  {
+    "Title": "Crusader Kings III",
+    "Type": {
+      "TypeName": "Strategy"
+    },
+    "StartDate": "2024-02-20T00:00:00",
+    "EndDate": "2024-03-25T00:00:00",
+    "HoursPlayed": 55,
+    "Rating": 9.3
+  },
+  {
+    "Title": "League of Legends",
+    "Type": {
+      "TypeName": "MOBA"
+    },
+    "StartDate": "2022-01-05T00:00:00",
+    "EndDate": null,
+    "HoursPlayed": 75,
+    "Rating": 8.9
+  }
+] 
