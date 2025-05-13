@@ -10,7 +10,6 @@ namespace DocumentManagement
 
         public Volume() : base()
         {
-            // Default constructor
         }
 
         public Volume(string isbn, string title, int publicationYear, int pageCount, int volumeNumber, int totalVolumes)
@@ -18,7 +17,7 @@ namespace DocumentManagement
         {
             if (volumeNumber > totalVolumes)
             {
-                throw new InvalidVolumeNumberException($"Volume number ({volumeNumber}) cannot be greater than total volumes ({totalVolumes})");
+                throw new VolumeNumberExceedsTotalException($"Volume number ({volumeNumber}) cannot be greater than total volumes ({totalVolumes})");
             }
             VolumeNumber = volumeNumber;
             TotalVolumes = totalVolumes;
