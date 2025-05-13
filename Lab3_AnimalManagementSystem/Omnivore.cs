@@ -2,9 +2,14 @@ public class Pig : Animal, IHerbivore, ICarnivore
 {
     public Pig(string name, int age, double weight) : base(name, age, weight) { }
 
-    public void FindFood()
+    void IHerbivore.FindFood()
     {
-        Console.WriteLine($"{Name} is looking for food.");
+        Console.WriteLine($"{Name} is looking for vegetables.");
+    }
+
+    void ICarnivore.FindFood()
+    {
+        Console.WriteLine($"{Name} is looking for meat.");
     }
 
     public void EatPlant()
