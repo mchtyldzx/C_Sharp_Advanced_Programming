@@ -15,10 +15,12 @@ I created different types of documents:
 1. `Book`
    - Has author information
    - Checks if year is after printing invention (1440)
+   - Throws `PrintingNotInventedYearException` if year is before 1440
 
 2. `Volume`
    - Shows which volume number it is
    - Checks if volume number is valid
+   - Throws `VolumeNumberExceedsTotalException` if volume number is greater than total
 
 3. `Magazine`
    - Has issue number
@@ -30,11 +32,11 @@ I created different types of documents:
 - Can search documents by title
 - Can find magazines by how often they come out
 - Checks for errors like:
-  - Same ISBN twice
-  - Books before printing was invented
-  - Wrong volume numbers
+  - Same ISBN twice (throws `DocumentAlreadyExistsException`)
+  - Books before printing was invented (throws `PrintingNotInventedYearException`)
+  - Wrong volume numbers (throws `VolumeNumberExceedsTotalException`)
 
-## What This Program Does
+## What This Program Do
 1. Add different types of documents
 2. See list of all documents
 3. Find documents by ISBN
@@ -49,12 +51,6 @@ I created different types of documents:
   - Polymorphism (different ways to print)
   - Abstract classes and methods
   - Properties and methods
-- Exception handling
+- Exception handling (with custom exceptions)
 - Console colors to make it look nice
 - Lists to store documents
-
-## What Is Needed To Run This
-- .NET 6.0 (or newer)
-- Visual Studio 2022 (Community Edition is fine)
-
-Mücahit Yıldız
