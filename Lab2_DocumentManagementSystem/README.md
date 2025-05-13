@@ -15,12 +15,10 @@ I created different types of documents:
 1. `Book`
    - Has author information
    - Checks if year is after printing invention (1440)
-   - Throws `PrintingNotInventedYearException` if year is before 1440
 
 2. `Volume`
    - Shows which volume number it is
    - Checks if volume number is valid
-   - Throws `VolumeNumberExceedsTotalException` if volume number is greater than total
 
 3. `Magazine`
    - Has issue number
