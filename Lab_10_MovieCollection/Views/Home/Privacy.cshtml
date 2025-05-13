@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Privacy";
+}
+
+<div class="privacy-box">
+    <h1>Privacy</h1>
+    <ul class="privacy-list">
+        <li>No data collection</li>
+        <li>Local storage only</li>
+        <li>No cookies</li>
+    </ul>
+</div>
+
+<style>
+.privacy-box {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.privacy-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.privacy-list li {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    background: #f8f9fa;
+    border-radius: 5px;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+.privacy-list li:before {
+    content: "✓";
+    color: #27ae60;
+    margin-right: 10px;
+    font-weight: bold;
+}
+</style> 

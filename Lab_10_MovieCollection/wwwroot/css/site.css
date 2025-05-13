@@ -1,0 +1,188 @@
+html {
+  font-size: 14px;
+  background: #f6f8fa;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #f6f8fa 0%, #e9ecef 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 80px;
+}
+
+h1, h4 {
+  font-weight: 800;
+  color: #1a1a2e;
+  letter-spacing: 1px;
+}
+
+.table {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(34,34,59,0.08);
+  overflow: hidden;
+  margin-top: 24px;
+}
+.table th {
+  background: linear-gradient(90deg, #22223b 60%, #4a4e69 100%);
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+}
+.table td {
+  vertical-align: middle;
+  border-top: 1px solid #f0f0f0;
+}
+
+.card {
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(34,34,59,0.10);
+  border: none;
+  background: #fff;
+}
+.card-body {
+  padding: 2rem 2.5rem;
+}
+
+dl.row dt {
+  font-weight: 700;
+  color: #22223b;
+}
+dl.row dd {
+  color: #4a4e69;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #258cfb 60%, #4f8cff 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(37,140,251,0.10);
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #1864ab 60%, #3b5998 100%);
+  box-shadow: 0 4px 16px rgba(37,140,251,0.18);
+}
+
+.btn-warning {
+  background: linear-gradient(90deg, #fbbf24 60%, #f59e42 100%);
+  border: none;
+  color: #22223b;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(251,191,36,0.10);
+}
+.btn-warning:hover {
+  background: linear-gradient(90deg, #f59e42 60%, #fbbf24 100%);
+  box-shadow: 0 4px 16px rgba(251,191,36,0.18);
+}
+
+.btn-info {
+  background: linear-gradient(90deg, #38bdf8 60%, #0ea5e9 100%);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(56,189,248,0.10);
+}
+.btn-info:hover {
+  background: linear-gradient(90deg, #0ea5e9 60%, #38bdf8 100%);
+  box-shadow: 0 4px 16px rgba(56,189,248,0.18);
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #ef4444 60%, #b91c1c 100%);
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(239,68,68,0.10);
+}
+.btn-danger:hover {
+  background: linear-gradient(90deg, #b91c1c 60%, #ef4444 100%);
+  box-shadow: 0 4px 16px rgba(239,68,68,0.18);
+}
+
+.form-control, .form-select {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 1px 4px rgba(34,34,59,0.04);
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.form-control:focus, .form-select:focus {
+  border-color: #258cfb;
+  box-shadow: 0 0 0 2px #258cfb33;
+}
+
+footer {
+  background: #22223b;
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #22223b 60%, #4a4e69 100%) !important;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+.navbar .navbar-brand {
+  color: #fff !important;
+  font-weight: 800;
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #22223b;
+}
+
+.form-group input.form-control {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 0.7rem 1rem;
+  font-size: 1.1rem;
+}
+
+.form-group input.form-control:focus {
+  background: #fff;
+  border-color: #258cfb;
+}
+
+.form-group .text-danger {
+  font-size: 0.95rem;
+  margin-top: 2px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
