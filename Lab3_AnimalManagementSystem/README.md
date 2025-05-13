@@ -25,16 +25,33 @@ I created different types of animals:
    - Can find and eat both plants and meat
 
 ### Animal Manager
-- Keeps track of all animals
-- Can add animals to the list
-- Can feed all herbivores and carnivores
-- Can display all animals, herbivores, and carnivores
-- Checks for errors when adding animals
+- Keeps track of all animals in separate lists:
+  - Main animals list
+  - Herbivores list
+  - Carnivores list
+- Multiple ways to add animals:
+  - `AddAnimal()`: Add any type of animal
+  - `AddHerbivore()`: Add specifically herbivorous animals
+  - `AddCarnivore()`: Add specifically carnivorous animals
+- Can copy animals between lists using `CopyAnimalsToDietLists()`
+- Feeding capabilities:
+  - Feed all herbivores at once
+  - Feed all carnivores at once
+  - Feed individual herbivores
+  - Feed individual carnivores
+- Display functions:
+  - Show all animals
+  - Show only herbivores
+  - Show only carnivores
+- Can find animals by name using `FindAnimalByName()`
 
-## What This Program Do
-1. Add different types of animals
-2. Feed all herbivores and carnivores
-3. See a list of all animals
-4. Display all herbivores
-5. Display all carnivores
-6. Simulate feeding individual animals
+## What This Program Does
+1. Add different types of animals using various methods
+2. Copy animals between different diet lists
+3. Feed all herbivores and carnivores
+4. Feed individual animals
+5. See a list of all animals
+6. Display all herbivores
+7. Display all carnivores
+8. Find specific animals by name
+9. Simulate feeding individual animals
