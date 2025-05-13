@@ -113,7 +113,7 @@ public class ZooManager
         }
     }
 
-    public Animal FindAnimalByName(string name)
+    public Animal? FindAnimalByName(string name)
     {
         return Animals.Find(a => a.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
     }
