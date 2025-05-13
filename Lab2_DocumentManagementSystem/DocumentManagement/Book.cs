@@ -17,7 +17,7 @@ namespace DocumentManagement
         {
             if (publicationYear < 1440) // Gutenberg's printing press was invented around 1440
             {
-                throw new InvalidPublicationYearException("Book publication year cannot be before the invention of printing (1440)");
+                throw new PrintingNotInventedYearException("Book publication year cannot be before the invention of printing (1440)");
             }
             Author = author;
         }
