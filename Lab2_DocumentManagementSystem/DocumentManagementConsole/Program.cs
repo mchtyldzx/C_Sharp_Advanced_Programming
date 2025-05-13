@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using DocumentManagement;
 using DocumentManagement.Exceptions;
@@ -103,7 +103,7 @@ namespace DocumentManagementConsole
                     var oldBook = new Book("978-0-13-235089-0", "Ancient Book", 1000, 100, "Ancient Author");
                     manager.AddDocument(oldBook);
                 }
-                catch (InvalidPublicationYearException ex)
+                catch (PrintingNotInventedYearException ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
                 }
@@ -114,7 +114,7 @@ namespace DocumentManagementConsole
                     var invalidVolume = new Volume("978-0-13-235089-1", "Invalid Volume", 2023, 100, 5, 3);
                     manager.AddDocument(invalidVolume);
                 }
-                catch (InvalidVolumeNumberException ex)
+                catch (VolumeNumberExceedsTotalException ex)
                 {
                     Console.WriteLine($"Error: {ex.Message}");
                 }
