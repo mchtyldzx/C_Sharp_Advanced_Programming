@@ -36,8 +36,8 @@ To ensure the database has initial data, the SeedData class checks if any movie 
 ## Setup
 
 1. Clone the repository
-2. Navigate to the project directory
+1. Navigate to the project directory
 3. Install dependencies: `dotnet restore`
 4. Create database: `dotnet ef database update`
 5. Run the application: `dotnet run`
-6. Visit: `https://localhost:5001`
+6. Visit: `http://localhost:5001`
