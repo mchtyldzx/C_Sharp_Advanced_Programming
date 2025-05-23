@@ -39,6 +39,37 @@ public class Recipe
 }
 ```
 
+## Class Diagram
+
+```mermaid
+classDiagram
+    class Category {
+        int Id
+        string Name
+        List~Recipe~ Recipes
+    }
+    class Recipe {
+        int Id
+        string Name
+        string Description
+        DateTime CreatedDate
+        int CategoryId
+        Category Category
+        List~Ingredient~ Ingredients
+        bool IsFavorite
+    }
+    class Ingredient {
+        int Id
+        string Name
+        string Quantity
+        int RecipeId
+        Recipe Recipe
+    }
+
+    Category --> Recipe : has many
+    Recipe --> Ingredient : has many
+```
+
 ## Technologies Used
 
 - ASP.NET Core MVC (.NET 8)
