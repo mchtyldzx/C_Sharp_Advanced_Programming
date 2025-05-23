@@ -32,7 +32,6 @@ The solution consists of three main projects:
 4. Run the ContactManager application
 
 
-
 ## Plugin System
 
 The application can dynamically load classes that implement the IPluginable interface using the reflection mechanism. This allows adding new serialization formats without recompiling the application.
