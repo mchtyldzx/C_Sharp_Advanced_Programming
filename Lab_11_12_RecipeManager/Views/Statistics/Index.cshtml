@@ -1,0 +1,29 @@
+@model IEnumerable<RecipeManager.ViewModels.CategoryStatsViewModel>
+
+@{
+    ViewData["Title"] = "Category Statistics";
+}
+
+<h1>Category Statistics</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Number of Recipes</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var stat in Model)
+        {
+            <tr>
+                <td>@stat.CategoryName</td>
+                <td>@stat.RecipeCount</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<p>
+    <a asp-controller="Home" asp-action="Index">Back to Home</a>
+</p>

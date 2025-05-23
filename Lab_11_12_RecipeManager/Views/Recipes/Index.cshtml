@@ -1,0 +1,86 @@
+@model RecipeManager.Helpers.PaginatedList<Recipe>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Recipes</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<!-- 🔍 Search Form -->
+<form asp-action="Index" method="get">
+    <p>
+        Search by name:
+        <input type="text" name="searchString" value="@ViewData["CurrentFilter"]" />
+        <input type="submit" value="Search" class="btn btn-sm btn-primary" />
+    </p>
+</form>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                <a asp-action="Index"
+                   asp-route-sortOrder="@ViewData["NameSortParm"]"
+                   asp-route-searchString="@ViewData["CurrentFilter"]">Name</a>
+            </th>
+            <th>Description</th>
+            <th>
+                <a asp-action="Index"
+                   asp-route-sortOrder="@ViewData["DateSortParm"]"
+                   asp-route-searchString="@ViewData["CurrentFilter"]">Date</a>
+            </th>
+            <th>Category</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>@item.CreatedDate.ToShortDateString()</td>
+            <td>@item.Category?.Name</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<!-- 📄 Paging Controls -->
+<nav>
+    <ul class="pagination">
+        @if (Model.HasPreviousPage)
+        {
+            <li class="page-item">
+                <a class="page-link"
+                   asp-action="Index"
+                   asp-route-pageNumber="@(Model.PageIndex - 1)"
+                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                   asp-route-searchString="@ViewData["CurrentFilter"]">
+                    Previous
+                </a>
+            </li>
+        }
+        @if (Model.HasNextPage)
+        {
+            <li class="page-item">
+                <a class="page-link"
+                   asp-action="Index"
+                   asp-route-pageNumber="@(Model.PageIndex + 1)"
+                   asp-route-sortOrder="@ViewData["CurrentSort"]"
+                   asp-route-searchString="@ViewData["CurrentFilter"]">
+                    Next
+                </a>
+            </li>
+        }
+    </ul>
+</nav>

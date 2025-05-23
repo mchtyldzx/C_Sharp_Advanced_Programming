@@ -1,0 +1,31 @@
+@model Category
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<h1>Category: @Model.Name</h1>
+
+<h4>Recipes in this category:</h4>
+
+@if (Model.Recipes != null && Model.Recipes.Any())
+{
+    <ul>
+        @foreach (var recipe in Model.Recipes)
+        {
+            <li>
+                <a asp-controller="Recipes" asp-action="Details" asp-route-id="@recipe.Id">
+                    @recipe.Name
+                </a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p><i>No recipes in this category yet.</i></p>
+}
+
+<p>
+    <a asp-action="Index">Back to Category List</a>
+</p>
